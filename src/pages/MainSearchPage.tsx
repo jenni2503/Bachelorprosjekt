@@ -5,8 +5,10 @@ const MainSearchPage = () => {
   return (
     <>
       {/* Title */}
-      <div className="self-center text-3xl tracking-wider">TOLLETATEN</div>
-      <div className="self-center mt-3 text-xs">NORWEGIAN CUSTOMS</div>
+      <div className="text-center pt-12 text-3xl font-bold tracking-wider">
+        TOLLETATEN
+      </div>
+      <div className="text-center pr-14 mt-3 text-xs">NORWEGIAN CUSTOMS</div>
 
       <Tabs />
 
