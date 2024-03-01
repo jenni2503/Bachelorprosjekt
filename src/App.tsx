@@ -1,13 +1,8 @@
-
 import MainSearchPage from "./pages/MainSearchPage";
 import "./styles.css";
 
 const App = () => {
-  return (
-    <div className="App">
-      <MainSearchPage />
-    </div>
-  );
+  return <MainSearchPage />;
 };
 
 export default App;

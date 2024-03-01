@@ -7,19 +7,25 @@ import Tabs from "../components/Tabs";
 const MainSearchPage = () => {
   return (
     <>
-      <div className="bg-zinc-800 h-screen">
-        {/* Title */}
-        <div className="text-center pt-28 text-3xl font-bold tracking-wider text-yellow-300 bg-opacity-90">
-          TOLLETATEN
-        </div>
-        <div className="text-center pr-14 mt-1 text-xs text-yellow-300 bg-opacity-90">
-          NORWEGIAN CUSTOMS
-        </div>
+      {/* height */}
+      <div className="h-full ">
+        <div className="">
+          {/* Title */}
+          <div className="text-center pt-20 text-3xl font-bold tracking-wider text-yellow-300 bg-opacity-90">
+            TOLLETATEN
+          </div>
+          <div className="text-center mt-1 text-xs text-yellow-300 bg-opacity-90">
+            NORWEGIAN CUSTOMS
+          </div>
 
-        <Tabs />
-        <SearchBar />
-        {/*<InformationPage />*/}
-        <Content />
+          <Tabs />
+
+          <SearchBar />
+
+          <Content />
+
+          {/*<InformationPage />*/}
+        </div>
       </div>
     </>
   );
