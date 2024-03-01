@@ -1,11 +1,15 @@
 const Tabs = () => {
   return (
-    <div
-      className="flex gap-5 pl-60 mt-24 ml-6 font-semibold
-     text-slate-100 tracking-wide lg:justify-start md:justify-center sm:justify-center"
-    >
-      <div className="">Spørsmål</div>
-      <div className="">BKU</div>
+    <div className="lg:flex lg:justify-center">
+      <div
+        className="flex gap-5 mt-24 lg:pl-8 font-semibold
+        text-slate-100 tracking-wide lg:justify-start
+          justify-center
+          lg:w-2/3"
+      >
+        <div className="text-sm md:text-lg">Spørsmål</div>
+        <div className="text-sm md:text-lg">BKU</div>
+      </div>
     </div>
   );
 };
