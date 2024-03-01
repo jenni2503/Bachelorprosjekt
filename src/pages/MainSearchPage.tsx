@@ -1,8 +1,6 @@
 import SearchBar from "../components/SearchBar";
 import Content from "../components/Content";
-
 import Tabs from "../components/Tabs";
-//import InformationPage from "../components/InformationPage";
 
 const MainSearchPage = () => {
   return (
@@ -30,8 +28,6 @@ const MainSearchPage = () => {
           <SearchBar />
 
           <Content />
-
-          {/*<InformationPage />*/}
         </div>
       </div>
     </>
