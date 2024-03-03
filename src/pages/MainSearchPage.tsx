@@ -1,5 +1,4 @@
-import SearchBar from "../components/SearchBar";
-import Content from "../components/Content";
+import Search from "../components/Search";
 import Tabs from "../components/Tabs";
 
 const MainSearchPage = () => {
@@ -10,24 +9,22 @@ const MainSearchPage = () => {
         <div className="">
           {/* Title */}
           <div
-            className="text-center pt-20 text-xl
-          font-bold tracking-wider md:text-3xl text-yellow-300
-           bg-opacity-90"
+            className="text-center pt-16 text-xl
+          font-bold tracking-wider md:text-3xl
+          text-yellow-200"
           >
             TOLLETATEN
           </div>
           <div
             className="text-center mt-1 text-[10px]/[20px] md:text-sm
-           text-yellow-300 bg-opacity-90"
+           text-yellow-200"
           >
             NORWEGIAN CUSTOMS
           </div>
 
           <Tabs />
 
-          <SearchBar />
-
-          <Content />
+          <Search />
         </div>
       </div>
     </>
