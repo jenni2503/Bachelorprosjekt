@@ -11,9 +11,13 @@ npm install
 npm run dev
 ```
 
-The website should now be running on your computer
-Click the link it gives you on the terminal/console you ran those commands in
+The website should now be running on your computer. <br/>
+
+Click the link it gives you on the terminal/console you ran those commands in.
 
 #e.g: [http://localhost:3000](http://localhost:3000)
 
-## Website link: [https://al-tariffering-prod.netlify.app](https://al-tariffering-prod.netlify.app/)
+## Website link:
+
+<br/>
+[https://al-tariffering-prod.netlify.app](https://al-tariffering-prod.netlify.app/)
