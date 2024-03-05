@@ -17,7 +17,9 @@ const MoreInformation = ({ item }: Props) => {
 
         {/* Beskrivelse */}
         <div className="mt-5">
-          <p className="pl-5 text-slate-100 font-bold">Beskrivelse:</p>
+          <p className="pl-5 text-slate-100 font-bold text-sm md:text-lg">
+            Beskrivelse:
+          </p>
           <p
             className="mt-5 mx-5 px-5 py-5 rounded-xl 
             text-slate-100 bg-neutral-400 bg-opacity-40"
@@ -28,7 +30,9 @@ const MoreInformation = ({ item }: Props) => {
 
         {/* Begrunnelse */}
         <div className="mt-5">
-          <p className="pl-5 text-slate-100 font-bold">Begrunnelse:</p>
+          <p className="pl-5 text-slate-100 font-bold text-sm md:text-lg">
+            Begrunnelse:
+          </p>
           <p
             className="mt-5 mx-5 px-5 py-5 rounded-xl 
             text-slate-100 bg-neutral-400 bg-opacity-40"
