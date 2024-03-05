@@ -8,7 +8,9 @@ const Search = () => {
 
   //fetching data
   const submitSearch = () => {
-    fetch("../../public/mockdata/searchMock.json")
+    // if does not work on dev (npm run dev)
+    //use ./../../public/mockdata/searchMock.json (relative path)
+    fetch("/mockdata/searchMock.json")
       .then((res) => {
         return res.json();
       })

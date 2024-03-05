@@ -14,7 +14,7 @@ const MainSearchPage = () => {
           font-bold tracking-wider md:text-3xl
           text-yellow-200"
           >
-            TOLLETATEN
+            TOLLETATEN DEPLOYMENT
           </div>
           <div
             className="text-center mt-1 text-[10px]/[20px] md:text-sm
