@@ -21,7 +21,7 @@ const Content = ({ items }: Props) => {
   };
 
   return (
-    <div className="md:flex md:justify-center">
+    <div className="md:flex md:justify-center mb-4">
       <div
         className="mt-6 mx-2 rounded-xl
         md:w-5/6 lg:w-2/3
@@ -79,7 +79,7 @@ const Content = ({ items }: Props) => {
                   >
                     {expandIndex == i ? (
                       <svg
-                        className="w-8 pt-4 h-[30px] md:h-[55px] text-white"
+                        className="w-8 h-[45px] md:h-[55px] text-white"
                         viewBox="5 0 30 25"
                         strokeWidth="2"
                         stroke="currentColor"
@@ -93,7 +93,7 @@ const Content = ({ items }: Props) => {
                       </svg>
                     ) : (
                       <svg
-                        className="w-8 pt-4 h-[30px] md:h-[55px] text-white"
+                        className="w-8 h-[45px] md:h-[55px] text-white"
                         viewBox="5 0 30 25"
                         strokeWidth="2"
                         stroke="currentColor"
