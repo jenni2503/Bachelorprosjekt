@@ -12,17 +12,21 @@ const MoreInformation = ({ item }: Props) => {
         <div className="w-full h-[1px] mt-5 bg-white"></div>
         {/* Posisjon */}
         <div>
-          <p className="pt-10 pl-5 text-slate-100 font-light">{`Posisjon: ${item.posisjon}`}</p>
+          <p
+            className="pt-10 pl-5 text-slate-100 font-ligh 
+          text-[15px] tracking-widet"
+          >{`Posisjon: ${item.posisjon}`}</p>
         </div>
 
         {/* Beskrivelse */}
         <div className="mt-5">
-          <p className="pl-5 text-slate-100 font-bold text-sm md:text-lg">
+          <p className="pl-5 text-slate-100 font-bold text-[15px] tracking-wide]">
             Beskrivelse:
           </p>
           <p
             className="mt-5 mx-5 px-5 py-5 rounded-xl 
-            text-slate-100 bg-neutral-400 bg-opacity-40"
+            text-slate-100 bg-neutral-500 
+             bg-opacity-60 text-sm tracking-[0.3px]"
           >
             {item.beskrivelse}
           </p>
@@ -30,12 +34,14 @@ const MoreInformation = ({ item }: Props) => {
 
         {/* Begrunnelse */}
         <div className="mt-5">
-          <p className="pl-5 text-slate-100 font-bold text-sm md:text-lg">
+          <p className="pl-5 text-slate-100 
+          font-bold text-[15px] tracking-wide">
             Begrunnelse:
           </p>
           <p
             className="mt-5 mx-5 px-5 py-5 rounded-xl 
-            text-slate-100 bg-neutral-400 bg-opacity-40"
+            text-slate-100 bg-neutral-500 bg-opacity-60 
+            text-sm tracking-[0.3px]"
           >
             {item.begrunnelse}
           </p>

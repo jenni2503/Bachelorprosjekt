@@ -21,7 +21,7 @@ const InfoModal = () => {
             <h1 className="font-bold mb-2">
               Om BKU (Bindende klassifiseringsuttalelse)
             </h1>
-            <p className="mb-10">
+            <p className="mb-10 text-md tracking-[0.5px]">
               BKU-søk inneholder alle gyldige bindende forhåndsuttalelser om
               klassifisering fattet iht. vareførselsforskriften § 7-6. Du kan
               søke etter de ulike klassifiseringsuttalelsene i vårt oppslagsverk
@@ -29,13 +29,14 @@ const InfoModal = () => {
               klassifiseringsuttalelser.
             </p>
             <h1 className="font-bold mb-2">Om søk etter BKU</h1>
-            <p className="mb-10">
+            <p className="mb-10 text-md tracking-[0.5px]">
               Uttalelsene finner du kun på norsk, og du kan benytte fritekst
               eller 2-8 siffer i ditt søk (se også eksempler på søk nedenfor).
               Når du søker så får du opp en resultatliste der det er sortert fra
               mest sannsynlig riktig varenummer til lignenede varenummer.
             </p>
             <h1 className="font-bold mb-2">Eksempeler på søk</h1>
+            <p className="text-md tracking-[0.5px]">djskdjks</p>
           </div>
         </Modal>
       </div>

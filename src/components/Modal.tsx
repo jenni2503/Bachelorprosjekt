@@ -8,11 +8,14 @@ const Modal = ({ open, onClose, children }: Props) => {
   return (
     open && (
       // Black overlay behind the white content box/modal that covers the whole screen
-      <div className="w-full h-full fixed top-0 left-0 bg-black/40 overflow-y-auto">
+      <div className="w-full h-full fixed top-0 left-0 bg-black/40">
         {/* make the white content box/modal come to the middle of the black overlay */}
         <div className="w-full flex justify-center mt-10">
           {/* info content box */}
-          <div className="bg-white/100 rounded-lg p-6 w-[300px] md:w-[600px] relative">
+          <div
+            className="bg-white/100 rounded-lg p-6 max-h-[600px] w-[300px] md:w-[500px] relative
+          overflow-y-auto"
+          >
             {/* close button */}
             <button
               className="absolute top-2 right-2 py-1 px-2 border

@@ -41,14 +41,23 @@ const Content = ({ items }: Props) => {
               >
                 <div className="flex flex-col md:flex-row flex-wrap">
                   <div>
-                    <p className="inline-block pl-5 text-slate-100 font-semibold">{`Vareslag: `}</p>
+                    <p
+                      className="inline-block pl-5 text-slate-100 
+                    font-semibold text-[15px] tracking-wide"
+                    >{`Vareslag: `}</p>
                     <p className="inline-block pl-1 text-slate-100 font-light">
                       {content.vareslag}
                     </p>
                   </div>
                   <div>
-                    <p className="inline-block pl-5 text-slate-100 font-semibold">{`Varenummer: `}</p>
-                    <p className="inline-block pl-1 text-slate-100 font-light">
+                    <p
+                      className="inline-block pl-5 text-slate-100 
+                    font-semibold text-[15px] tracking-wide"
+                    >{`Varenummer: `}</p>
+                    <p
+                      className="inline-block pl-1
+                     text-slate-100 font-light"
+                    >
                       {content.varenummer}
                     </p>
                   </div>
@@ -70,8 +79,7 @@ const Content = ({ items }: Props) => {
                   >
                     {expandIndex == i ? (
                       <svg
-                        className="w-8 pt-4 text-white"
-                        height="60"
+                        className="w-8 pt-4 h-[30px] md:h-[55px] text-white"
                         viewBox="5 0 30 25"
                         strokeWidth="2"
                         stroke="currentColor"
@@ -85,8 +93,7 @@ const Content = ({ items }: Props) => {
                       </svg>
                     ) : (
                       <svg
-                        className="w-8 pt-4 text-white"
-                        height="60"
+                        className="w-8 pt-4 h-[30px] md:h-[55px] text-white"
                         viewBox="5 0 30 25"
                         strokeWidth="2"
                         stroke="currentColor"
