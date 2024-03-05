@@ -11,7 +11,7 @@ const InfoModal = () => {
           className="h-5 pl-2 md:pl-0 md:w-20 md:h-10 mt-16 border-l-[1px] border-yellow-300"
           onClick={() => setOpen(true)}
         >
-          <p className="text-yellow-300 text-xs md:text-sm font-semibold">
+          <p className="text-yellow-300 text-sm md:text-sm font-semibold">
             INFO
           </p>
         </button>

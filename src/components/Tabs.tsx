@@ -7,8 +7,8 @@ const Tabs = () => {
           justify-center
           lg:w-2/3"
       >
-        <div className="text-sm md:text-lg">Spørsmål</div>
-        <div className="text-sm md:text-lg">BKU</div>
+        <div className="text-[14px] md:text-lg">Spørsmål</div>
+        <div className="text-[14px] md:text-lg">BKU</div>
       </div>
     </div>
   );
