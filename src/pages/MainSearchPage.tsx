@@ -1,3 +1,4 @@
+import InfoModal from "../components/InfoModal";
 import Search from "../components/Search";
 import Tabs from "../components/Tabs";
 
@@ -21,6 +22,7 @@ const MainSearchPage = () => {
           >
             NORWEGIAN CUSTOMS
           </div>
+          <InfoModal />
 
           <Tabs />
 

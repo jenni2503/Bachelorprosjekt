@@ -33,7 +33,7 @@ const Content = ({ items }: Props) => {
             // i = number of the content we click on
             return (
               <div
-                key={content.varenummer} // unique id
+                key={content.varenummer} // map has to have unique id
                 className="flex flex-col items-start
                pt-6 mb-3 rounded-xl
                bg-neutral-700 border-white 
@@ -55,6 +55,7 @@ const Content = ({ items }: Props) => {
                 </div>
 
                 {expandIndex == i && (
+                  // transition-all ease-in-out duration-500
                   <div className="w-full">
                     {/* sending props */}
                     <MoreInformation item={content} />

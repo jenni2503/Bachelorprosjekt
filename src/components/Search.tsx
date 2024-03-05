@@ -57,7 +57,8 @@ const Search = () => {
               onClick={submitSearch}
               className="px-8 md:px-12 py-2 
             md:py-6 text-base md:text-lg font-semibold 
-            rounded-2xl bg-yellow-300 active:bg-yellow-200"
+            rounded-2xl bg-yellow-300 active:bg-yellow-200
+            cursor-pointer"
             >
               Søk
             </button>
