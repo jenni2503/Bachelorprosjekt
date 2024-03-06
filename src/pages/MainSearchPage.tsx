@@ -10,14 +10,14 @@ const MainSearchPage = () => {
         <div className="">
           {/* Title */}
           <div
-            className="text-center pt-16 text-3xl
+            className="text-center pt-16 text-3xl lg:text-[33px]
           font-bold tracking-wider
           text-yellow-200"
           >
             TOLLETATEN
           </div>
           <div
-            className="text-center mt-1 text-[14px]/[20px] md:text-sm
+            className="text-center mt-1 text-[14px]/[20px]
            text-yellow-200"
           >
             NORWEGIAN CUSTOMS

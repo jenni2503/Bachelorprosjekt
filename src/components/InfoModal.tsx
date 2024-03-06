@@ -8,12 +8,11 @@ const InfoModal = () => {
     <div className="w-full flex justify-center">
       <div className="flex justify-end w-full mr-5 md:mr-0 md:w-5/6 lg:w-2/3">
         <button
-          className="h-5 pl-2 md:pl-0 md:w-20 md:h-10 mt-16 border-l-[1px] border-yellow-300"
+          className="h-5 pl-2 md:pl-0 md:w-20 md:h-10 mt-16 border-l-[1px]
+           border-yellow-300 transition-colors duration-300 hover:bg-amber-200/5"
           onClick={() => setOpen(true)}
         >
-          <p className="text-yellow-300 text-sm md:text-sm font-semibold">
-            INFO
-          </p>
+          <p className="text-yellow-300 text-sm font-semibold">INFO</p>
         </button>
         <Modal open={open} onClose={() => setOpen(false)}>
           {/* children */}
@@ -21,7 +20,7 @@ const InfoModal = () => {
             <h1 className="font-bold mb-2">
               Om BKU (Bindende klassifiseringsuttalelse)
             </h1>
-            <p className="mb-10 text-md tracking-[0.5px]">
+            <p className="mb-10 tracking-[0.5px]">
               BKU-søk inneholder alle gyldige bindende forhåndsuttalelser om
               klassifisering fattet iht. vareførselsforskriften § 7-6. Du kan
               søke etter de ulike klassifiseringsuttalelsene i vårt oppslagsverk
@@ -29,14 +28,14 @@ const InfoModal = () => {
               klassifiseringsuttalelser.
             </p>
             <h1 className="font-bold mb-2">Om søk etter BKU</h1>
-            <p className="mb-10 text-md tracking-[0.5px]">
+            <p className="mb-10 tracking-[0.5px]">
               Uttalelsene finner du kun på norsk, og du kan benytte fritekst
               eller 2-8 siffer i ditt søk (se også eksempler på søk nedenfor).
               Når du søker så får du opp en resultatliste der det er sortert fra
               mest sannsynlig riktig varenummer til lignenede varenummer.
             </p>
             <h1 className="font-bold mb-2">Eksempeler på søk</h1>
-            <p className="text-md tracking-[0.5px]">djskdjks</p>
+            <p className="tracking-[0.5px]">djskdjks</p>
           </div>
         </Modal>
       </div>
