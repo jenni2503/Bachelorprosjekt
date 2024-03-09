@@ -6,22 +6,22 @@ const MainSearchPage = () => {
   return (
     <>
       {/* height */}
-      <div className="h-full ">
+      <div className="h-full px-4 md:px-28">
         <div className="">
           {/* Title */}
-          <div
+          <h1
             className="text-center pt-16 text-3xl lg:text-[33px]
           font-bold tracking-wider
           text-yellow-200"
           >
             TOLLETATEN
-          </div>
-          <div
+          </h1>
+          <h1
             className="text-center mt-1 text-[14px]/[20px]
            text-yellow-200"
           >
             NORWEGIAN CUSTOMS
-          </div>
+          </h1>
           <InfoModal />
 
           <Tabs />

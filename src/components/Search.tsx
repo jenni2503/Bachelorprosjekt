@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { item } from "../types/itemType";
 import Content from "./Content";
+import SearchIcon from "./SearchIcon";
 
 const Search = () => {
   const [responseData, setResponseData] = useState<item[]>([]);
@@ -33,36 +34,20 @@ const Search = () => {
       md:w-5/6 lg:w-2/3
     "
         >
-          <div className="flex h-[60px] md:h-[80px] bg-neutral-700 rounded-2xl">
-            {/* search icon */}
-            <svg
-              className="w-14 pl-4 text-white"
-              viewBox="0 0 24 24"
-              strokeWidth="2"
-              stroke="currentColor"
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              {" "}
-              <path stroke="none" d="M0 0h24v24H0z" />{" "}
-              <circle cx="10" cy="10" r="7" />{" "}
-              <line x1="21" y1="21" x2="15" y2="15" />
-            </svg>
+          <div className="flex h-[6vh] md:h-[7vh] bg-neutral-700 rounded-2xl">
             {/* input */}
             <input
-              className="w-full h-[85%] ml-1 pl-3 mr-1
+              className="w-full h-[80%] ml-1 pl-3 
             self-center text-lg text-slate-50 font-medium
           bg-neutral-800 bg-opacity-50 rounded-lg"
             ></input>
             <button
               onClick={submitSearch}
-              className="px-8 md:px-12 py-2 
-            md:py-6 text-base md:text-lg font-semibold 
-            rounded-2xl bg-yellow-300 active:bg-yellow-200
-            cursor-pointer"
+              className="px-3 md:px-5 text-base md:text-lg 
+              font-semibold rounded-r-2xl transition-colors 
+              duration-300 active:bg-amber-200/10"
             >
-              Søk
+              <SearchIcon />
             </button>
           </div>
         </div>
