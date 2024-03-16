@@ -14,13 +14,13 @@ const MainSearchPage = () => {
           font-bold tracking-wider
           text-yellow-200 font-roboto"
           >
-            TOLLETATEN
+            AI-Tariffering
           </h1>
           <h1
             className="text-center mt-1 text-[14px]/[20px]
            text-yellow-200 font-roboto"
           >
-            NORWEGIAN CUSTOMS
+            Bachelorprosjekt
           </h1>
           <InfoModal />
 
