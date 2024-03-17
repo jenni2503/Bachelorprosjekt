@@ -7,7 +7,7 @@ import json
 
 
 load_dotenv()
-openai.api_key = "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"
+openai.api_key = os.getenv("OPENAI_KEY")
 
 # Funksjoner for å håndtere databasen med varenumre
 def last_inn_varenumre(filsti):
