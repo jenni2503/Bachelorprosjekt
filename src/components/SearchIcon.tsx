@@ -1,7 +1,14 @@
+import { useContext } from "react";
+import { ThemeContext } from "../contexts/ThemeContext";
+
 const SearchIcon = () => {
+  const { themeColor } = useContext(ThemeContext);
+
   return (
     <svg
-      className="w-8 h-8 text-yellow-200"
+      className={
+        `w-8 h-8 ` + (themeColor == "light" ? "text-white" : "text-yellow-200")
+      }
       viewBox="0 0 24 24"
       strokeWidth="2"
       stroke="currentColor"

@@ -1,7 +1,10 @@
 import { useState } from "react";
+import { useContext } from "react";
 import Modal from "./Modal";
+import { ThemeContext } from "../contexts/ThemeContext";
 
 const InfoModal = () => {
+  const { themeColor } = useContext(ThemeContext);
   const [open, setOpen] = useState<boolean>(false);
 
   return (
@@ -11,12 +14,23 @@ const InfoModal = () => {
       mr-5 md:mr-0 md:w-5/6 lg:w-2/3"
       >
         <button
-          className="h-5 pl-2 md:pl-0 md:w-20 
-          md:h-10 mt-16 border-l-[1px] border-yellow-300 
-          transition-colors duration-30 hover:bg-amber-200/5"
+          className={
+            `h-5 pl-2 md:pl-0 md:w-20 
+          md:h-10 mt-16 border-l-[1px] transition-colors duration-30 ` +
+            (themeColor == "light"
+              ? "hover:bg-slate-950/5 border-black"
+              : "hover:bg-amber-200/5 border-yellow-300")
+          }
           onClick={() => setOpen(true)}
         >
-          <p className="text-yellow-300 text-sm font-semibold">INFO</p>
+          <p
+            className={
+              `text-sm font-semibold ` +
+              (themeColor == "light" ? "text-black" : "text-yellow-300")
+            }
+          >
+            INFO
+          </p>
         </button>
         <Modal open={open} onClose={() => setOpen(false)}>
           {/* children */}

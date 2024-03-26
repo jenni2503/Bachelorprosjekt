@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --bodyColor: rgb(32, 32, 34);
+}
+
 body {
-  background-color: rgb(32, 32, 34);
+  background-color: var(--bodyColor);
 }

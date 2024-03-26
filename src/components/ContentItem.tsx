@@ -1,42 +1,47 @@
 import { useState } from "react";
+import { useContext } from "react";
 import { item } from "../types/itemType";
 import MoreInformation from "./MoreInformation";
+import { ThemeContext } from "../contexts/ThemeContext";
 
 type Props = {
   content: item;
 };
 
 const ContentItem = ({ content }: Props) => {
+  const { themeColor } = useContext(ThemeContext);
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
 
   return (
     <div
-      className="flex flex-col items-start
-               pt-6 mb-3 rounded-xl
-               bg-neutral-700 border-white 
-               border-solid border-[0.5px]"
+      className={
+        `flex flex-col items-start
+               pt-6 mb-3 rounded-xl border-white 
+               border-solid border-[0.5px] ` +
+        (themeColor == "light" ? "bg-neutral-600" : "bg-neutral-700")
+      }
     >
       <div className="flex flex-col md:flex-row flex-wrap">
         <div>
-          <p
+          <h1
             className="inline-block pl-5 text-slate-100 
                     font-semibold text-[15px] tracking-wide"
-          >{`Vareslag: `}</p>
-          <p className="inline-block pl-1 text-slate-100 font-light">
+          >{`Vareslag: `}</h1>
+          <h2 className="inline-block pl-1 text-slate-100 font-light">
             {content.vareslag}
-          </p>
+          </h2>
         </div>
         <div>
-          <p
+          <h1
             className="inline-block pl-5 text-slate-100 
                     font-semibold text-[15px] tracking-wide"
-          >{`Varenummer: `}</p>
-          <p
+          >{`Varenummer: `}</h1>
+          <h2
             className="inline-block pl-1
                      text-slate-100 font-light"
           >
             {content.varenummer}
-          </p>
+          </h2>
         </div>
       </div>
 
